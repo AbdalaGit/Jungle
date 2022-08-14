@@ -1,0 +1,326 @@
+/* **************************************************************** */
+/* ************************* Start Global ************************* */
+/* **************************************************************** */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    transition: all 0.4s linear;
+    text-transform: capitalize;
+    outline: none;
+    color: #fff;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--color-tow);
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 50px;
+    background-color: var(--color-main);
+}
+
+:root{
+    --color-main: rgb(6, 168, 6);
+    --color-tow: rgb(13, 87, 53);
+}
+
+::selection{
+    color: var(--color-main);
+}
+
+li{
+    direction: rtl;
+}
+
+li::marker{
+    color: var(--color-main);
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    background-color: rgb(17, 16, 16);
+}
+
+/* **************************************************************** */
+/* ************************* End Global *************************** */
+/* **************************************************************** */
+
+/* **************************************************************** */
+/* ************************* Start Header ************************* */
+/* **************************************************************** */
+
+.navbar{
+    background-color: var(--color-tow);
+    border-bottom: 1px solid rgba(0 0 0 /30%);
+}
+
+.container .logo{
+    color: #fff;
+}
+
+.container .logo:hover{
+    color: var(--color-main);
+}
+
+.container img{
+    width: 50px;
+    height: 50px;
+}
+
+.navbar .navbar-nav .nav-link{
+    color: #fff;
+    margin-left: 30px;
+    background-color: rgba(168, 214, 192, 0.3);
+}
+
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active{
+    color: var(--color-main);
+    border-radius: 3px 3px 3px 3px;
+}
+
+.navbar .navbar-toggler{
+    color: #fff;
+    font-size: 25px;
+    border-color: #fff;
+}
+
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.dropdown-menu{
+    max-width: 150%;
+    min-height: 100%;
+    flex-direction: column;
+}
+
+.dropdown-menu img{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .title{
+    color: #fff;
+}
+
+.card .body{
+    background-color: var(--color-tow);
+}
+
+.card:hover{
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+/* **************************************************************** */
+/* ************************* Start Search ************************* */
+/* **************************************************************** */
+
+.search-box{
+    background: var(--color-main);
+    height: 40px;
+    border-radius: 40px;
+    margin: 0 15px 0 15px;
+}
+
+.search-btn{
+    color: #fff;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--color-main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search{
+    background: var(--color-main);
+    border: none;
+    float: left;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+}
+
+.search-box:hover > .search{
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search::placeholder{
+    padding-left: 5px;
+    color: #fff;
+}
+
+/* **************************************************************** */
+/* ************************* End Search *************************** */
+/* **************************************************************** */
+
+/* **************************************************************** */
+/* ************************* End Header *************************** */
+/* **************************************************************** */
+
+/* **************************************************************** */
+/* ************************* Start Landing ************************ */
+/* **************************************************************** */
+
+.landing{
+    position: relative;
+    background-color: var(--color-tow);
+    width: 100vw;
+    height: 100vh;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    object-fit: fill;
+}
+
+.text-p{
+    z-index: 2;
+    width: 90%;
+}
+
+.text-land{
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(13 87 53/50%);
+    width: 100%;
+    min-height: 35vh;
+}
+
+/* **************************************************************** */
+/* ************************* End Landing ************************** */
+/* **************************************************************** */
+
+/* **************************************************************** */
+/* ************************* Start Plants ************************* */
+/* **************************************************************** */
+
+.plant{
+    position: relative;
+}
+
+.line{
+    width: 100px;
+    height: 2px;
+    background-color: var(--color-tow);
+    margin: 10px auto;
+}
+
+.text-pp{
+    width: 100%;
+    min-height: 100%;
+}
+
+.imge-fuel{
+    width: 400px;
+    height: 400px;
+}
+
+/* **************************************************************** */
+/* ************************* End Plants *************************** */
+/* **************************************************************** */
+
+.containerr{
+    width: 100vw;
+    min-height: 100vh;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.cardd{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    box-shadow: 1px 1px 15px #fff;
+    border: solid 1px #fff;
+    border-radius: 6px;
+    background-color: var(--color-tow);
+    margin: 7px;
+    overflow: hidden;
+}
+
+.cardd img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.content{
+    position: absolute;
+    z-index: 5;
+    text-align: center;
+    background-color: rgb(245 239 239 / 20%);
+    border-radius: 10px;
+    transform: translateX(-100%);
+    height: 100%;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+.cardd:hover{
+    transform: scale(1.1);
+}
+
+.cardd:hover > .content{
+    transform: translateX(0);
+}
+
+/* **************************************************************** */
+/* ************************* Start Footer ************************* */
+/* **************************************************************** */
+
+.footer{
+    background-color: var(--color-tow);
+}
+
+.footer-text{
+    color: var(--color-main);
+}
+
+.footer-icon{
+    width: 100px;
+    height: 100px;
+}
+
+.footer-socil{
+    color: var(--color-main);
+}
+
+.footer-socil:hover{
+    transform: scale(1.1);
+    justify-content: space-between;
+}
+
+/* **************************************************************** */
+/* ************************* End Footer *************************** */
+/* **************************************************************** */
