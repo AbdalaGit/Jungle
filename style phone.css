@@ -286,6 +286,10 @@ video{
     padding-bottom: 5px;
 }
 
+.content h2{
+    color: var(--color-main);
+}
+
 .cardd:hover{
     
 }
